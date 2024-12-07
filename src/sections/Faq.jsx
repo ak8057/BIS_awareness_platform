@@ -6,10 +6,8 @@ const Faq = () => {
   const halfLength = Math.floor(faq.length / 2);
 
   return (
-    <section>
+    <section id="faqs">
       <Element name="faq" className="relative">
-        
-
         <div className="faq-glow_before relative z-2 border-2 border-s2 bg-s1">
           <div className="container flex gap-10 max-lg:block">
             <div className="rounded-half bg-transparent absolute -top-10 left-[calc(50%-40px)] z-4 flex size-20 items-center justify-center border-4 border-s2 bg-s1">

@@ -27,7 +27,7 @@ import VerticalAccordion from "./components/VerticalAccordion";
 import { HoverImageLinks } from "./components/HoverImageLinks";
 // import { VelocityText } from "./components/VelocityText";
 // import HorizontalScrollCarousel from "./components/HorizontalScrollCarousel";
-import quiz from "./pages/quiz"; // Quiz page for routing
+// import quiz from "./pages/quiz"; // Quiz page for routing
 
 function App() {
   return (
