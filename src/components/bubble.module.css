@@ -1,0 +1,39 @@
+.hoverText {
+  display: inline-block;
+  transition: transform 0.3s ease-out, color 0.3s ease-out, font-weight 0.3s ease-out;
+  will-change: transform, color, font-weight; /* Optimize for smooth animations */
+}
+
+.hoverText:hover {
+  font-weight: 900;
+  color: rgb(238, 242, 255);
+  transform: scale(1.2);
+}
+
+/* Ripple Effects */
+.hoverText:hover + .hoverText {
+  transition-delay: 0.1s;
+  font-weight: 700;
+  color: rgb(199, 210, 254);
+  transform: scale(1.1);
+}
+
+.hoverText:hover + .hoverText + .hoverText {
+  transition-delay: 0.2s;
+  font-weight: 500;
+  transform: scale(1.05);
+}
+
+/* Left Ripple */
+.hoverText:has(+ .hoverText:hover) {
+  transition-delay: 0.1s;
+  font-weight: 700;
+  color: rgb(199, 210, 254);
+  transform: scale(1.1);
+}
+
+.hoverText:has(+ .hoverText + .hoverText:hover) {
+  transition-delay: 0.2s;
+  font-weight: 500;
+  transform: scale(1.05);
+}
