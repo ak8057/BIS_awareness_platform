@@ -6,9 +6,9 @@ const VerticalAccordion = () => {
   const [open, setOpen] = useState(items[0].id);
 
   return (
-    <section className="py-12 px-4 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
+    <section className="py-20 px-4 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
       <div className="max-w-7xl mx-auto">
-        <header className="text-center mb-8">
+        <header className="text-center mb-14">
           <h2 className="text-3xl lg:text-4xl font-extrabold text-white mb-4">
             Explore Our Key Areas
           </h2>

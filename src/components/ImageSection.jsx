@@ -67,7 +67,7 @@ const App = () => {
             window.pageYOffset || document.documentElement.scrollTop;
           direction = currentScroll > scrollTop;
           scrollTop = currentScroll <= 0 ? 0 : currentScroll;
-          lerp.target += direction ? speed * 7 : -speed * 7;
+          lerp.target += direction ? speed * 5 : -speed * 5;
         };
 
         window.addEventListener("scroll", onScroll);

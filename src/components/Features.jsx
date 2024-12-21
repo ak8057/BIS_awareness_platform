@@ -38,7 +38,7 @@ export const BentoTilt = ({ children, className = "" }) => {
   );
 };
 
-export const BentoCard = ({ src, title, description, isComingSoon }) => {
+export const BentoCard = ({ src, title, description, isComingSoon, link = "#" }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [hoverOpacity, setHoverOpacity] = useState(0);
   const hoverButtonRef = useRef(null);
@@ -57,28 +57,36 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
   const handleMouseLeave = () => setHoverOpacity(0);
 
   return (
+   
     <div className="relative size-full">
+       <a
+      href={link} // Redirects to the provided link
+      target="_blank" // Opens the link in a new tab (optional)
+      rel="noopener noreferrer" // Ensures security when opening links in a new tab
+      className="relative size-full block" // Ensures the entire card is clickable
+      >
+
       <video
         src={src}
         loop
         muted
         autoPlay
         className="absolute left-0 top-0 size-full object-cover object-center"
-      />
+        />
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
         <div>
           <h1 className="bento-title special-font">{title}</h1>
           {description && (
             <p className="mt-3 max-w-64 text-xs md:text-base">{description}</p>
-          )}
+            )}
         </div>
 
         {isComingSoon && (
           <div
-            ref={hoverButtonRef}
-            onMouseMove={handleMouseMove}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+          ref={hoverButtonRef}
+          onMouseMove={handleMouseMove}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
             className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white/20"
           >
             {/* Radial gradient hover effect */}
@@ -88,12 +96,13 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
                 opacity: hoverOpacity,
                 background: `radial-gradient(100px circle at ${cursorPosition.x}px ${cursorPosition.y}px, #656fe288, #00000026)`,
               }}
-            />
+              />
             <TiLocationArrow className="relative z-20" />
             <p className="relative z-20">coming soon</p>
           </div>
         )}
       </div>
+        </a>
     </div>
   );
 };
@@ -103,12 +112,13 @@ const Features = () => (
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <p className="font-circular-web text-lg text-blue-50">
-          Into the Metagame Layer
+          Welcome to the BIS Playground
         </p>
         <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-          Immerse yourself in a rich and ever-expanding universe where a vibrant
-          array of products converge into an interconnected overlay experience
-          on your world.
+          Explore a dynamic and interactive platform designed to make learning
+          about the Bureau of Indian Standards fun and engaging. Dive into
+          quizzes, games, and activities that bring standards to life in an
+          exciting way!
         </p>
       </div>
 
@@ -117,11 +127,12 @@ const Features = () => (
           src="videos/feature-1.mp4"
           title={
             <>
-              radia<b>n</b>t
+              BIS <b>Quest</b>
             </>
           }
-          description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
+          description="Embark on an exciting journey in BIS Quest! Collect coins, dodge obstacles, and learn about the Bureau of Indian Standards in this engaging and educational adventure."
           isComingSoon
+          link="https://vchampsbisawarenessgame.netlify.app/"
         />
       </BentoTilt>
 
@@ -131,11 +142,12 @@ const Features = () => (
             src="videos/feature-2.mp4"
             title={
               <>
-                zig<b>m</b>a
+                BIS <b>Explorer</b>{" "}
               </>
             }
-            description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
+            description="Step into the world of BIS Explorer! Navigate through an open world, interact with characters, and test your knowledge about the Bureau of Indian Standards with engaging quizzes."
             isComingSoon
+            link="https://vchampsbisopenworldquiz.netlify.app/"
           />
         </BentoTilt>
 
@@ -144,11 +156,12 @@ const Features = () => (
             src="videos/feature-3.mp4"
             title={
               <>
-                n<b>e</b>xus
+                BIS <b>Journey</b>
               </>
             }
-            description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
+            description="Embark on the BIS Journey! Scroll through an interactive path as a plane flies across, revealing key insights about the Bureau of Indian Standards along the way."
             isComingSoon
+            link="https://vchampsbisprooducts.netlify.app/"
           />
         </BentoTilt>
 
@@ -157,11 +170,12 @@ const Features = () => (
             src="videos/feature-4.mp4"
             title={
               <>
-                az<b>u</b>l
+                BIS <b>Quiz Quest</b>
               </>
             }
-            description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
+            description="Take on the BIS Quiz Quest! Guide your character through the path and face challenges where other characters block your way until you answer their BIS-related questions correctly."
             isComingSoon
+            link="https://charming-tulumba-f02b0f.netlify.app/"
           />
         </BentoTilt>
 

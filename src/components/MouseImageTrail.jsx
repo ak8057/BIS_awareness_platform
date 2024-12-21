@@ -33,8 +33,18 @@ export  const Example = () => {
         <div className="absolute inset-0 opacity-5 pointer-events-none">
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="gray" strokeWidth="0.5"/>
+              <pattern
+                id="grid"
+                width="40"
+                height="40"
+                patternUnits="userSpaceOnUse"
+              >
+                <path
+                  d="M 40 0 L 0 0 0 40"
+                  fill="none"
+                  stroke="gray"
+                  strokeWidth="0.5"
+                />
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#grid)" />
@@ -51,31 +61,38 @@ export  const Example = () => {
                 Precision Quality Assurance
               </h1>
             </div>
-            
+
             <p className="text-xl text-gray-600 leading-relaxed">
-              Elevate your product's quality with our meticulous testing and innovative QA strategies. We transform potential risks into opportunities for excellence.
+              Elevate your product's quality with our meticulous testing and
+              innovative QA strategies. We transform potential risks into
+              opportunities for excellence.
             </p>
 
             {/* Feature Highlights */}
             <div className="grid md:grid-cols-2 gap-6">
               {[
-                { 
-                  icon: FiCheck, 
-                  title: "Comprehensive Testing", 
-                  description: "End-to-end quality validation across all platforms." 
+                {
+                  icon: FiCheck,
+                  title: "Comprehensive Testing",
+                  description:
+                    "End-to-end quality validation across all platforms.",
                 },
-                { 
-                  icon: FiTrendingUp, 
-                  title: "Continuous Improvement", 
-                  description: "Data-driven insights for constant optimization." 
+                {
+                  icon: FiTrendingUp,
+                  title: "Continuous Improvement",
+                  description:
+                    "Data-driven insights for constant optimization.",
                 },
-                { 
-                  icon: FiShield, 
-                  title: "Risk Mitigation", 
-                  description: "Proactive identification of potential issues." 
-                }
+                {
+                  icon: FiShield,
+                  title: "Risk Mitigation",
+                  description: "Proactive identification of potential issues.",
+                },
               ].map(({ icon: Icon, title, description }, index) => (
-                <div key={index} className="flex items-start space-x-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl shadow-soft">
+                <div
+                  key={index}
+                  className="flex items-start space-x-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl shadow-soft"
+                >
                   <Icon className="w-8 h-8 text-blue-500 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-bold text-gray-800">{title}</h3>
@@ -93,16 +110,20 @@ export  const Example = () => {
               <button className="px-8 py-3 border border-gray-300 text-gray-700 font-semibold rounded-full hover:bg-gray-100 transition-colors">
                 Learn More
               </button>
-              
             </div>
           </div>
 
           {/* Right Content - Decorative Element */}
           <div className="hidden md:flex justify-center items-center relative">
-            <div className="absolute w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
-            <div className="relative z-10 w-full aspect-square bg-white/70 backdrop-blur-sm rounded-3xl shadow-2xl p-8 flex justify-center items-center">
-              <div className="w-full h-full bg-cover bg-center rounded-2xl" 
-                   style={{backgroundImage: "url('/imgs/active/entrance.png')"}}
+            {/* Background Blur and Gradient Overlay */}
+            <div className="absolute w-80 h-80 bg-gradient-to-tr from-blue-400 via-purple-500 to-pink-500 opacity-30 rounded-full blur-3xl animate-pulse"></div>
+
+            {/* Inner Card with Enhanced Design */}
+            <div className="relative z-10 w-full aspect-square bg-gradient-to-br from-white/60 to-gray-100/50 backdrop-blur-lg rounded-3xl shadow-xl shadow-gray-400/30 p-8 flex justify-center items-center">
+              {/* Image Container with Subtle Hover Effect */}
+              <div
+                className="w-full h-full bg-cover bg-center rounded-2xl transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+                style={{ backgroundImage: "url('/imgs/active/entrance.png')" }}
               />
             </div>
           </div>

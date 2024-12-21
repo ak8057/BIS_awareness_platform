@@ -95,6 +95,11 @@ const Hero = () => {
             <div></div>
             <div></div>
           </div>
+          <style>{`
+              body {
+                  overflow: hidden;
+            }`
+          }</style>
         </div>
       )}
 

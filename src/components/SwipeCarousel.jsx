@@ -113,9 +113,9 @@ export const SwipeCarousel = () => {
             exit={{ opacity: 0, y: -20 }}
             className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent text-white"
           >
-            <h2 className="text-2xl font-bold mb-2">Nature's Canvas</h2>
+            <h2 className="text-2xl font-bold mb-2">BIS's Canvas</h2>
             <p className="text-sm opacity-80">
-              Explore the breathtaking landscapes that paint our world
+              Explore the BIS World!
             </p>
           </motion.div>
         </AnimatePresence>

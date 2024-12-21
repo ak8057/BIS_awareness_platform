@@ -53,7 +53,7 @@ const ScrollingImages = () => {
           window.pageYOffset || document.documentElement.scrollTop;
         direction = currentScroll > scrollTop;
         scrollTop = currentScroll <= 0 ? 0 : currentScroll;
-        lerp.target += direction ? speed * 6 : -speed * 6;
+        lerp.target += direction ? speed * 5 : -speed * 5;
       };
 
       window.addEventListener("scroll", onScroll);
@@ -73,11 +73,10 @@ const ScrollingImages = () => {
     <section className="hero-section">
       <div className="loop-container">
         <div className="item special-font hero-heading">
-          Empowering Safer Smarter Sustainable India &nbsp;
+          Empowering ~ Safer ~ Smarter ~ Sustainable ~ India &nbsp;
         </div>
         <div className="item special-font hero-heading">
-          Let's Build Trust and Excellence in Every Aspect of
-          Life.&nbsp;
+          Let's Build ~ Trust ~ Excellence.&nbsp;
         </div>
       </div>
     </section>

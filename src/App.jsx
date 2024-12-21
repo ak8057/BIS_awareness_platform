@@ -25,6 +25,7 @@ import { SwipeCarousel } from "./components/SwipeCarousel";
 import ParticleRing from "./components/ParticleRing";
 import VerticalAccordion from "./components/VerticalAccordion";
 import { HoverImageLinks } from "./components/HoverImageLinks";
+
 // import { VelocityText } from "./components/VelocityText";
 // import HorizontalScrollCarousel from "./components/HorizontalScrollCarousel";
 // import quiz from "./pages/quiz"; // Quiz page for routing
@@ -62,16 +63,17 @@ function App() {
       <Hero />
       <About />
       <Features />
+     
       {/* <HorizontalScrollCarousel /> */}
-      <div className="relative z-0  bg-primary">
+      <div className="relative z-0 m-0 p-0  bg-primary">
         <ScrollingImages />
         <ImageSection />
         {/* <StarsCanvas /> */}
       </div>
       {/* <Slider type="slider1" /> */}
-      <div className="relative z-0  bg-primary">
+      <div className="relative z-0  m-0 p-0 bg-primary">
         <Experience />
-        {/* <StarsCanvas /> */}
+        <StarsCanvas />
       </div>
       <AuroraHero />
       <Faq />
@@ -93,11 +95,6 @@ function App() {
       <HoverImageLinks />
       <Footer />
     </main>
-
-
-
-
-
   );
 }
 

@@ -1,8 +1,10 @@
 const MIN_RADIUS = 7.5;
 const MAX_RADIUS = 15;
 const DEPTH = 2;
-const LEFT_COLOR = "6366f1";
-const RIGHT_COLOR = "8b5cf6";
+
+// Updated to red shades
+const LEFT_COLOR = "ff0000"; // Pure red
+const RIGHT_COLOR = "ff7f7f"; // Light red
 const NUM_POINTS = 2500;
 
 /**

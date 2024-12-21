@@ -1,7 +1,6 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
-
 import AnimatedTitle from "./AnimatedTitle";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -28,6 +27,8 @@ const About = () => {
 
   return (
     <div id="about" className="min-h-screen w-screen">
+      
+
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
         <p className="font-general text-sm uppercase text-black-100 md:text-[10px]">
           Welcome to Bureau of Indian Standards
