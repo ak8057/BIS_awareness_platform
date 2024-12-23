@@ -124,15 +124,15 @@ const Features = () => (
 
       <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
         <BentoCard
-          src="videos/feature-1.mp4"
+          src="videos/feature-5.mp4"
           title={
             <>
-              BIS <b>Quest</b>
+              BIS <b>Dynamic world</b>
             </>
           }
-          description="Embark on an exciting journey in BIS Quest! Collect coins, dodge obstacles, and learn about the Bureau of Indian Standards in this engaging and educational adventure."
+          description="Dive into the BIS Dynamic world! Explore a dynamic 3D environment where you can interactively access BIS resources. Navigate through challenges, solve BIS-related questions, and unlock new paths in this immersive learning experience."
           isComingSoon
-          link="https://vchampsbisawarenessgame.netlify.app/"
+          link="https://vchampsbisdynamicwebsite.netlify.app/"
         />
       </BentoTilt>
 
@@ -153,15 +153,15 @@ const Features = () => (
 
         <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
           <BentoCard
-            src="videos/feature-3.mp4"
+            src="videos/feature-1.mp4"
             title={
               <>
-                BIS <b>Journey</b>
+                BIS <b>Quest</b>
               </>
             }
-            description="Embark on the BIS Journey! Scroll through an interactive path as a plane flies across, revealing key insights about the Bureau of Indian Standards along the way."
+            description="Embark on an exciting journey in BIS Quest! Collect coins, dodge obstacles, and learn about the Bureau of Indian Standards in this engaging and educational adventure."
             isComingSoon
-            link="https://vchampsbisprooducts.netlify.app/"
+            link="https://vchampsbisawarenessgame.netlify.app/"
           />
         </BentoTilt>
 
@@ -191,15 +191,15 @@ const Features = () => (
 
         <BentoTilt className="bento-tilt_2">
           <BentoCard
-            src="videos/feature-5.mp4"
+            src="videos/feature-3.mp4"
             title={
               <>
-                BIS <b>Dynamic world</b>
+                BIS <b>Journey</b>
               </>
             }
-            description="Dive into the BIS Dynamic world! Explore a dynamic 3D environment where you can interactively access BIS resources. Navigate through challenges, solve BIS-related questions, and unlock new paths in this immersive learning experience."
+            description="Embark on the BIS Journey! Scroll through an interactive path as a plane flies across, revealing key insights about the Bureau of Indian Standards along the way."
             isComingSoon
-            link="https://vchampsbisdynamicwebsite.netlify.app/"
+            link="https://vchampsbisprooducts.netlify.app/"
           />
         </BentoTilt>
       </div>
