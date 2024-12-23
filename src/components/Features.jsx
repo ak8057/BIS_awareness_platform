@@ -98,7 +98,7 @@ export const BentoCard = ({ src, title, description, isComingSoon, link = "#" })
               }}
               />
             <TiLocationArrow className="relative z-20" />
-            <p className="relative z-20">coming soon</p>
+            <p className="relative z-20">Play now</p>
           </div>
         )}
       </div>
@@ -190,12 +190,16 @@ const Features = () => (
         </BentoTilt>
 
         <BentoTilt className="bento-tilt_2">
-          <video
+          <BentoCard
             src="videos/feature-5.mp4"
-            loop
-            muted
-            autoPlay
-            className="size-full object-cover object-center"
+            title={
+              <>
+                BIS <b>Dynamic world</b>
+              </>
+            }
+            description="Dive into the BIS Dynamic world! Explore a dynamic 3D environment where you can interactively access BIS resources. Navigate through challenges, solve BIS-related questions, and unlock new paths in this immersive learning experience."
+            isComingSoon
+            link="https://vchampsbisdynamicwebsite.netlify.app/"
           />
         </BentoTilt>
       </div>
