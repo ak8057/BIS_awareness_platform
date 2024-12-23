@@ -175,7 +175,7 @@ const Features = () => (
             }
             description="Take on the BIS Quiz Quest! Guide your character through the path and face challenges where other characters block your way until you answer their BIS-related questions correctly."
             isComingSoon
-            link="https://charming-tulumba-f02b0f.netlify.app/"
+            link="https://vchampsbisinteractivequiz.netlify.app/"
           />
         </BentoTilt>
 
