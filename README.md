@@ -11,13 +11,13 @@ Welcome to the official GitHub repository for the BIS Website. This project is d
 - Users can click on the central button to switch between multiple trailers.
 - Includes a navigation bar with links to all major sections.
 
-![Home Page Screenshot](path/to/homepage-screenshot.png)
+![image](https://github.com/user-attachments/assets/066e8e4d-da07-4777-8b27-73e7921ac372)
 
 ### 2. **About BIS**
 - A brief overview of what BIS is and its purpose.
 - Split-page design with text and supporting visuals.
 
-![About BIS Screenshot](path/to/about-bis-screenshot.png)
+![Screenshot 2024-12-25 111006](https://github.com/user-attachments/assets/507b09fc-99dc-41b8-98b8-38af6f846469)
 
 ### 3. **BIS Playground**
 - **Interactive Games**:
@@ -30,26 +30,27 @@ Welcome to the official GitHub repository for the BIS Website. This project is d
      - A plane follows a curvy path as users scroll, revealing BIS-related facts.
   4. **Quiz Path Game**:
      - Move through a path and answer questions posed by NPCs to earn points.
-
-![Playground Screenshot](path/to/playground-screenshot.png)
+       
+![Screenshot 2024-12-25 111101](https://github.com/user-attachments/assets/24e635da-2dc8-4366-b606-f23736f3352c)
 
 ### 4. **Certificates Section**
 - Showcases all 7 BIS certificates in a grid layout.
 - Hover effects reveal additional details.
-
-![Certificates Screenshot](path/to/certificates-screenshot.png)
+- 
+![Screenshot 2024-12-25 111024](https://github.com/user-attachments/assets/fbd003d6-75f4-4f13-b52e-7a2fee723058)
 
 ### 5. **FAQ Section**
 - Accordion-style FAQ for user-friendly navigation.
 - Includes search functionality for quick access to specific information.
 
-![FAQ Screenshot](path/to/faq-screenshot.png)
+![Screenshot 2024-12-25 110909](https://github.com/user-attachments/assets/ea898e67-fb65-4439-97be-cd09c045edc5)
 
 ### 6. **BIS Image Gallery**
 - A responsive grid or masonry-style gallery showcasing images of BIS events, products, and initiatives.
 - Lightbox functionality for detailed viewing.
 
-![Image Gallery Screenshot](path/to/gallery-screenshot.png)
+![Screenshot 2024-12-25 110921](https://github.com/user-attachments/assets/d38c6c2f-6e46-4fc9-a419-b019697ed988)
+
 
 ---
 
