@@ -2,6 +2,7 @@
 
 Welcome to the official GitHub repository for the BIS Website. This project is designed to provide users with an interactive and informative platform to learn about the Bureau of Indian Standards (BIS), its certifications, and related activities. Below is an overview of the website features and how they are structured.
 
+https://bisworld.netlify.app/
 ---
 
 ## Features
